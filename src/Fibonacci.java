@@ -12,21 +12,21 @@ public class Fibonacci {
         // Create a new instance to read (stdin) values
         Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Introducce un numero entero para crear la succesion de fibonacci: ");
+        System.out.print("Enter an integer to create the Fibonacci sequence: ");
         
         // Check if the value input is correct (integer number)
         while (range <= 0) {
             while (!scanner.hasNextInt()) {
-                System.out.println("\nEl valor introduccido es incorrecto.");
+                System.out.println("\nThe value entered is incorrect.");
                 scanner.next();
-                System.out.print("Introduce un numero entero valido: ");
+                System.out.print("Enter a valid integer: ");
             }
             
             range = scanner.nextInt(); // Read the value
             
             if (range <= 0) {
-                System.out.println("\nEl valor introduccido tiene que ser mayor que cero.");
-                System.out.print("Introduce un numero entero valido: ");
+                System.out.println("\nThe entered value must be greater than zero.");
+                System.out.print("Enter a valid integer: ");
             }
         }
         
@@ -42,11 +42,11 @@ public class Fibonacci {
             }
         }
         
-        System.out.print("\nLa sucesion es: " + sb.toString());
+        System.out.print("\nThe sequence is: " + sb.toString());
         
         
         // Fibonacci with recursion
-        System.out.print("\nLa sucesion es: ");
+        System.out.print("\nThe sequence is: ");
         
         // Calculate fibonacci succession with recursion
         for (int i = 0; i < range; i++) {
